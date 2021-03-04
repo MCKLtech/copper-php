@@ -113,7 +113,7 @@ class CopperClient
      */
     protected $rateLimitDetails = [];
 
-    const COPPER_API_URL = 'https://api.prosperworks.com/developer_api/v1';
+    const COPPER_API_URL = 'https://api.prosperworks.com/developer_api';
 
     /**
      * CopperClient constructor.
