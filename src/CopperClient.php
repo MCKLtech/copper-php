@@ -113,7 +113,7 @@ class CopperClient
      */
     protected $rateLimitDetails = [];
 
-    const COPPER_API_URL = 'https://api.prosperworks.com/developer_api';
+    const COPPER_API_URL = 'https://api.copper.com/developer_api';
 
     /**
      * CopperClient constructor.
@@ -313,14 +313,11 @@ class CopperClient
      */
     private function getRequestAuthHeaders()
     {
-
-        $headers = [
+        return [
             'X-PW-AccessToken' => $this->apiToken,
             'X-PW-Application' => 'developer_api',
             'X-PW-UserEmail' => $this->email
         ];
-
-        return $headers;
 
     }
 
